@@ -1,0 +1,91 @@
+<!-- COMPONENTE PARA MOSTRAR LA SECCION DE AGREGAR EVENTOS-->
+<div class="blockShowInfo">
+
+    <div class="headerEventos">
+        <h2>Agrega Eventos</h2>
+    </div>
+
+    <div class="bodyFormEventos">
+        <form>
+
+            <div class="mb-3">
+                <label for="nombreEventos" class="form-label">Nombre:</label>
+                <input type="text" class="form-control" id="nombreEventos">
+
+            </div>
+
+            <div class="mb-3">
+                <label for="organizadorEventos" class="form-label">Organizador:</label>
+                <input type="text" class="form-control" id="organizadorEventos">
+            </div>
+
+
+            <div class="dateInputs">
+                <div class="inputFechaForm mb-3">
+                    <label for="fechaEventos" class="form-label">Fecha:</label>
+                    <input type="date" class="form-control" id="fechaEventos" min="2000-01-01" max="2050-01-01">
+                </div>
+
+                <div class="inputHoraForm mb-3">
+                    <label for="horaEventos" class="form-label">Hora:</label>
+                    <input type="time" class="form-control" id="horaEventos">
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="lugarEventos" class="form-label">Lugar:</label>
+                <input type="text" class="form-control" id="lugarEventos">
+            </div>
+
+            <div class="mb-3">
+                <label for="precioEventos" class="form-label">Precio:</label>
+                <input type="text" class="form-control" id="precioEventos">
+            </div>
+
+            <div class="radioBoxEvent mb-3">
+
+                <label for="lugarEventos" class="form-label">Lugar:</label>
+
+                <div class="radioForm">
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="estadoEvent" id="checkEstadoEventos">
+                        <label class="form-check-label" for="checkEstadoEventos">
+                            Presencial
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="estadoEvent" id="checkEstadoEventos">
+                        <label class="form-check-label" for="checkEstadoEventos">
+                            Semi-Presencial
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="estadoEvent" id="checkEstadoEventos">
+                        <label class="form-check-label" for="checkEstadoEventos">
+                            Virtual
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="descripcionTextArea mb-3">
+                <label for="descripcionEventos" class="form-label">Descripción:</label>
+                <textarea class="form-control" id="descripcionEventos"></textarea>
+            </div>
+        </form>
+    </div>
+
+
+    <div class="sendFormEventos">
+        <button class="btn btnSendEventos">
+            <span>PUBLICAR</span>
+            <figure>
+                <img src="../assets/ICONOS SIDEBAR/ICONOS ESTUDIANTES/imgIcon_4Publicar.png" alt="publicar eventos">
+            </figure>
+        </button>
+    </div>
+</div>

@@ -1,0 +1,63 @@
+<!-- COMPONENTE PARA MOSTRAR LA SECCION DE DATOS DE SERVICIOS-->
+<div class="blockShowInfo">
+
+    <div class="headerServicios">
+        <h2>Servicios</h2>
+    </div>
+
+
+    <div class="boxBodyServicios">
+
+        <div class="selectServicio">
+            <label for="servicioSelec">Servicio:</label>
+            <select class="form-select" aria-label="seleccionar servicio">
+                <option selected>Seleccionar...</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+        </div>
+
+        <div class="selectHorario my-4">
+            <label for="selectDate" class="form-label">Horario:</label>
+            <input type="text" class="form-control" id="selectDate">
+        </div>
+
+        <div class="selectUbicacion mb-4">
+            <label for="selectLocation" class="form-label">Ubicación:</label>
+            <input type="text" class="form-control" id="selectLocation">
+        </div>
+
+        <div class="selectCheckEstado form-check">
+            <label for="selectCheckEstado">Estado:</label>
+
+            <div class="checkService">
+                <input class="form-check-input" type="radio" name="checkService" id="checkEstadoService" checked>
+
+                <label class="form-check-label" for="checkEstadoService">
+                    Activo
+                </label>
+
+            </div>
+
+            <div class="checkService">
+                <input class="form-check-input" type="radio" name="checkService" id="checkEstadoService">
+                <label class="form-check-label" for="checkEstadoService">
+                    Desactivado
+                </label>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    <div class="sendSelectBox">
+        <button class="btn btnSendSelect">
+            <span>Actualizar</span>
+            <i class='bx bx-check'></i>
+        </button>
+    </div>
+</div>

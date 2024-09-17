@@ -1,0 +1,2043 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    font-family: "Lora", serif;
+
+}
+
+body {
+    overflow-x: hidden;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.navbar {
+    background-color: #002F69;
+    height: 8rem;
+}
+
+.logoDCYT {
+    position: relative;
+    width: 7rem;
+    height: 7rem;
+    margin: 0;
+    border-right: 2px solid white;
+    /* border-radius: .5rem; */
+    padding: .5rem
+}
+
+.titleDCYT {
+    color: white;
+    font-size: 1rem;
+    text-wrap: pretty;
+    margin-left: 1rem;
+    margin-bottom: 0;
+    width: 14rem;
+    text-align: center;
+    /* outline: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+}
+
+.titleDCYT>span:first-child {
+    margin-bottom: 1rem;
+}
+
+
+.blockPanel {
+    display: flex;
+    place-content: center;
+    /* height: 100%; */
+    margin: 2rem 0;
+}
+
+.mainPanel {
+    border: 2px solid rgba(0, 0, 0, 0.133);
+    border-radius: 1.2rem;
+    min-width: 80vw;
+    width: 90%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* height: 42rem; */
+    position: relative;
+}
+
+.estudianteView{
+    /* height: 59rem; */
+}
+
+.panelInfo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: .5rem;
+}
+
+.logoBlock {
+    overflow: hidden;
+    width: 15rem;
+    height: 3rem;
+    margin: 0;
+}
+
+.logoBlock img {
+    height: 100%;
+}
+
+.blockUser {
+    /* border: 1px solid black; */
+    display: inline-flex;
+    gap: 2rem;
+    padding: .7rem 1rem;
+    border-radius: 3rem;
+    width: 22rem;
+    background: linear-gradient(90deg, rgba(68, 179, 196, 1) 0%, rgba(94, 193, 178, 1) 35%, rgba(153, 223, 135, 1) 100%);
+    align-items: center;
+}
+
+.userIcon {
+    position: relative;
+    font-size: 3.5rem;
+    margin: 0;
+    display: flex;
+    height: 100%;
+}
+
+.infoUser {
+    /* font-weight: bold; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2rem 0 3.5rem;
+}
+
+.profAdminUser{
+    padding: 0;
+}
+
+.profAdminBlock{
+    background: linear-gradient(90deg, rgba(190,190,190,1) 0%, rgba(222,222,222,1) 50%, rgba(255,255,255,1) 100%);
+}
+
+.infoUser span:first-child {
+    font-size: 1.3rem;
+}
+
+.infoUser span:last-child {
+    color: #0d8bd2;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.panelWork {
+    /* outline: 1px solid blue; */
+    min-width: 20vw;
+    width: 27%;
+    position: relative;
+    background-color: #002F69;
+    border-radius: 0 0 0 1.2rem;
+}
+
+.panelWork > ul {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #002F69;
+    border-radius: 0 0 0 1.2rem;
+    overflow: hidden;
+}
+
+.adminViewPanel{
+    height: 60rem !important;
+}
+
+.blockWork {
+    display: inline-flex;
+    position: relative;
+    width: 100%;
+    /* height: 86%; */
+}
+
+.blockWorkEstudianteView{
+    /* height: 90%; */
+}
+
+.workOptions {
+    border: 2px solid black;
+    background-color: #002F69;
+    color: white;
+    height: 6rem;
+    padding: .5rem .7rem;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    gap: 1rem;
+    align-items: center;
+    transition: 300ms ease-in-out all;
+    cursor: pointer;
+}
+
+.workOptions > a{
+    display: inline-flex;
+    gap: 1rem;
+    height: 6rem;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    /* height: 100%; */
+}
+
+
+.workOptions:last-child {
+    /* border-radius: 0 0 0 1.2rem; */
+}
+
+.workOptions:hover{
+    /* z-index: 10; */
+    border-radius: 0;
+    transform: scale(102%);
+    z-index: 1000;
+}
+
+.workOptions > .btn{
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    border: none;
+}
+
+.dropdown-toggle::after{
+    font-size: 2rem;
+}
+
+
+.workOptions > .btn p{
+    margin-right: 3rem;
+}
+
+.dropdown-menu{
+    background-color: #002f69b9;
+    opacity: 1;
+}
+
+.dropdown-menu > li{
+    border: 1px solid rgba(185, 185, 185, 0.562);
+
+}
+
+
+.dropdown-item{
+    display: inline-flex;
+    gap: 1rem;
+    height: 5rem;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    background-color: #2d5585;
+    transition: 300ms ease-in-out;
+}
+
+.dropdown-item:hover{
+    background-color: #174175;
+    color: white;
+}
+
+.workOptions figure {
+    margin: 0;
+    width: 2rem;
+    height: 2rem;
+
+}
+
+.workOptions figure img {
+    object-fit: cover;
+}
+
+.workOptions p {
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.blockWorkInfo {
+    border-top: 4px solid #002F69;
+    width: 73%;
+    background-color: #C8EBFF;
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    border-radius:0 0 1.2rem 0;
+}
+
+.blockShowInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 1rem;
+    /* overflow: auto; */
+}
+
+/* estilos para mostrar informacion en cartelera informatica */
+.blockHeaderInfo {
+    background-color: #8C52FF;
+    border-radius: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    align-items: center;
+    width: 100%;
+    color: white;
+}
+
+.blockHeaderInfo figure {
+    margin: 0;
+    height: 4rem;
+    width: 4rem;
+    /* border: 2px solid #002F69;
+    border-radius: 50%; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .7rem;
+}
+
+.blockHeaderInfo h2 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+
+.mainBlockInfo {
+    margin: 2rem 0 0 0;
+    width: 100%;
+}
+
+.nameTable {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    background: linear-gradient(90deg, rgba(139, 63, 255, 1) 0%, rgba(117, 151, 243, 1) 41%, rgba(93, 224, 231, 1) 100%);
+    margin-bottom: .5rem;
+}
+
+.nameTable h4 {
+    margin: 0;
+    padding: .5rem 2rem;
+    margin: .5rem;
+    border-radius: 3rem;
+    background-color: white;
+    font-size: 1rem;
+}
+
+.nameTable span {
+    margin-right: 1rem;
+}
+
+.infoTable {
+    background: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 4px, transparent 4px) 0% 0%/8px 8px no-repeat,
+        radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 4px, transparent 4px) 100% 0%/8px 8px no-repeat,
+        radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 4px, transparent 4px) 0% 100%/8px 8px no-repeat,
+        radial-gradient(circle at 0 0, #ffffff 0, #ffffff 4px, transparent 4px) 100% 100%/8px 8px no-repeat,
+        linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 8px) calc(100% - 16px) no-repeat,
+        linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 16px) calc(100% - 8px) no-repeat,
+        linear-gradient(90deg, rgba(139, 63, 255, 1) 0%, rgba(93, 224, 231, 1) 100%);
+    border-radius: .5rem;
+    padding: 4px;
+    box-sizing: content-box;
+}
+
+.headerTable, .headerCarteleraTable {
+    background: linear-gradient(90deg, rgba(139, 63, 255, 1) 0%, rgba(117, 151, 243, 1) 41%, rgba(93, 224, 231, 1) 100%);
+    /* background: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 3px, transparent 3px) 0% 0%/8px 8px no-repeat,
+        radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 3px, transparent 3px) 100% 0%/8px 8px no-repeat,
+        radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 3px, transparent 3px) 0% 100%/8px 8px no-repeat,
+        radial-gradient(circle at 0 0, #ffffff 0, #ffffff 3px, transparent 3px) 100% 100%/8px 8px no-repeat,
+        linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 10px) calc(100% - 16px) no-repeat,
+        linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 16px) calc(100% - 10px) no-repeat,
+        linear-gradient(90deg, rgba(139, 63, 255, 1) 0%, rgba(93, 224, 231, 1) 100%);
+    border-radius: 1rem;
+    padding: 1rem;
+    box-sizing: border-box; */
+}
+
+.headerCarteleraTable{
+    display: flex;
+    /* align-items: center; */
+    height: 2.4rem;
+}
+
+.headerCarteleraTable span{
+    background-color: #38B6FF;
+    border-radius: 3rem;
+    padding: .4rem 1rem;
+    margin: 0 .4rem;
+    color: black;
+    height: 90%;
+    font-weight: bold;
+}
+
+.bodyCarteleraTable p{
+    width: 100%;
+    height: 7rem;
+    overflow: auto;
+    padding: .3rem;
+    text-wrap: pretty;
+    font-size: 1.5rem;
+}
+
+
+/* Estilos referente al componente cartelera informativa en modo tabla */
+.headerTable th {
+    border: 0;
+    background: transparent;
+}
+
+.headerTable th:first-child span {
+    background-color: #38B6FF;
+    border-radius: 3rem;
+    padding: .4rem 1rem;
+    margin: 0;
+}
+
+/* estilos para mostrar informacion en listado de estudiante */
+
+.headerEstudiante h2{
+    color: #123E74;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.selectInfoBlock{
+    display: flex;
+    margin-top: 3rem;
+    width: 80%;
+    align-items: center;
+    position: relative;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 3rem;
+}
+
+.selectInfoBlock p {
+    /* outline: 1px solid red; */
+    margin: 0;
+    width: 60%;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.tableInfoMateria{
+    margin-top: 2rem;
+    width: 100%;
+    /* outline: 1px solid red; */
+    height: auto;
+    /* border-radius: .7rem; */
+    /* overflow: auto; */
+    /* border: 3px solid #002F69; */
+}
+
+.tableInfoMateria .table {
+    margin: 0;
+    /* border-radius: .7rem; */
+    /* overflow: auto; */
+    /* border: 3px solid #002F69; */
+}
+
+.tableInfoMateria .table thead th:first-child{
+    /* overflow: hidden; */
+    border-top-left-radius: .7rem;
+}
+
+.tableInfoMateria .table thead th:last-child{
+    /* overflow: hidden; */
+    border-top-right-radius: .7rem;
+
+}
+
+/* .tableInfoMateria .table tbody tr td:first-child{
+    border-bottom-left-radius: .2rem;
+}
+
+.tableInfoMateria .table tbody tr td:last-child{
+    border-bottom-right-radius: .7rem;
+
+} */
+
+
+.tableInfoMateria .table tbody td:nth-child(2), .tableInfoMateria .table td:nth-child(3){
+    border-left: 3px solid #002F69;
+    border-right: 3px solid #002F69;
+}
+
+.tableInfoMateria .table thead th{
+    color: #123E74;
+    font-weight: bold;
+}
+
+.tableInfoMateria .table thead th:nth-child(2), .tableInfoMateria .table th:nth-child(3){
+    border-left: 3px solid #002F69;
+    border-bottom: 3px solid #002F69;
+    border-right: 3px solid #002F69;
+}
+.tableInfoMateria .table thead th:nth-child(1), .tableInfoMateria .table th:nth-child(4){
+    /* border-left: 3px solid #002F69; */
+    border-bottom: 3px solid #002F69;
+    /* border-right: 3px solid #002F69; */
+}
+
+.generateList{
+    margin-top: 1.5rem;
+}
+
+.generateList .btn {
+    background-color: #1FBF92;
+    border: 1px solid #1FBF92;
+    color: white;
+    padding: .7rem 1rem;
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    transition: 300ms ease-in-out all;
+    
+}
+
+.generateList .btn:hover{
+    background-color: #66ccaf;
+    border: 1px solid #66ccaf;
+    color: black;
+}
+
+.generateList .btn span{
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.generateList .btn .bx{
+    font-size: 1.8rem;
+}
+
+/* estilos para mostrar informacion de proximos eventos */
+
+.headerEventos h2{
+    color: #123E74;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+
+.showEventosBlock{
+    width: 100%;
+    border-radius: 1.5rem;
+    /* overflow: hidden; */
+    margin-top: 2rem;
+    /* outline: 1px solid green; */
+    /* height: 24rem; */
+}
+
+.titleEvent, .titleEventProyect{
+    background-color: #0D8BD2;
+    display: flex;
+    position: relative;
+    height: 2.5rem;
+    align-items: center;
+    gap: 1.5rem;
+    border-radius: 2rem 2rem 0 0;
+}
+
+.titleEvent figure, .titleEventProyect figure{
+    width: 3rem;
+    height: 100%;
+    
+    margin: 0;
+    border-radius: 3rem 3rem 0 0;
+}
+
+.titleEvent figure{
+    background-color: #006917;
+}
+
+.titleEventProyect figure{
+    background-color: #FFBD59;
+}
+
+.titleEvent h2, .titleEventProyect h2{
+    width: 90%;
+    color: white;
+    font-size: 1.3rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.personEvent{
+    height: 2rem;
+    width: 100%;
+    background-color: #38B6FF;
+    display: flex;
+    align-items: center;
+}
+
+.personEvent p {
+    margin: 0;
+    margin-left: 4rem;
+    color: black;
+}
+
+.horarioEvent{
+    background-color: #DF9797;
+    height: 20rem;
+    width: 100%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-radius: 0 0 2rem 2rem;
+}
+
+.infoDateEvent, .descripcionEvent{
+    /* outline: 1px solid red; */
+    width: 100%;
+    height: 50%;
+    position: relative;
+
+}
+
+.infoDateEvent{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.dateEvent{
+    width: 40%;
+}
+
+.headerHoraEvent, .headerLocationEvent{
+    text-align: center;
+    color: white;
+    font-size: 1.1rem;
+    margin: 0;
+    font-weight: bold;
+    width: 100%;
+    height: 25%;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.headerHoraEvent{
+    background-color: #002F69;
+}
+.headerHoraEvent h4, .headerLocationEvent h4{
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.horaEvento, .statusEvent{
+    background-color: white;
+    padding: .5rem 1rem;
+    height: 75%;
+
+}
+
+.horaEvento li , .statusEvent li{
+    
+    list-style-type:disc;
+    margin: auto 2rem;
+    font-size: 1rem;
+}
+
+.horaEvento li::marker{
+    color: #002F69;
+    font-size: 1rem;
+}
+
+.locationEvent{
+    width: 60%;
+
+}
+
+.headerLocationEvent{
+    background-color: #006917;
+}
+
+.statusEvent li::marker{
+    color: #006917;
+    font-size: 1.2rem;
+}
+
+.headerDescripcion {
+    font-size: 1.1rem;
+    width: 100%;
+    height: 25%;
+    padding: 0 1rem;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.headerDescripcion h4{
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.descripcionText{
+    background-color: white;
+    width: 100%;
+    height: 75%;
+    overflow: auto;
+}
+
+.descripcionText p {
+    color: black;
+    text-wrap: pretty;
+    padding: .5rem 1rem;
+}
+
+/* estilos para mostrar la seccion de publicacion */
+
+.headerPublicacion h2{
+    color: #123E74;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.postingBlock, .postingTextBlock{
+    margin-top: 2rem;
+    width: 80%;
+}
+
+.postingBlock label, .postingTextBlock label{
+    font-size: 1.5rem;
+    color: #0c85ca;
+}
+
+.postingBlock input, .postingTextBlock textarea {
+    border: 1px solid rgba(0, 0, 0, 0.644);
+    border-radius: 1rem;
+    
+}
+
+.postingTextBlock textarea{
+    height: 15rem;
+}
+
+.postOptions{
+    display: flex;
+    width: 70%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.btnCancel{
+    margin-top: 2rem;
+    background-color: red;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    height: 3rem;
+    transition: 300ms ease-in-out all;
+}
+
+.btnCancel i, .btnSend i{
+    font-size: 1.5rem;
+    color: white;
+    transition: 300ms ease-in-out all;
+}
+
+.btnSend{
+    margin-top: 2rem;
+    background-color: #1FBF92;
+    height: 3rem;
+    display: flex;
+    position: relative;
+    gap: 1rem;
+    align-items: center;
+    transition: 300ms ease-in-out all;
+}
+
+.btnSend span, .btnCancel span{
+    font-size: 1.2rem;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    transition: 300ms ease-in-out all;
+}
+
+.btnCancel:hover{
+    background-color: rgba(255, 0, 0, 0.712);
+}
+
+.btnSend:hover{
+    background-color: rgba(31, 191, 146, 0.718);
+}
+
+
+/* .btnSend figure{
+    height: 80%;
+    margin: 0;
+    
+}
+
+.btnSend figure img{
+    height: 100%;
+}
+ */
+
+
+/* estilos para mostrar la seccion de cambio de contraseña */
+
+
+.headerContrasena h2{
+    color: #123E74;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.formChangeContrasena{
+    width: 60%;
+    padding: 0 3rem;
+}
+
+.changeContrasena, .updateContrasena{
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.changeContrasena label{
+    color: #0c85ca;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.changeContrasena input {
+    border-radius: 2rem;
+    border: 1px solid rgba(0, 0, 0, 0.322);
+}
+
+.updateContrasena{
+    text-align: center;
+}
+
+.btnChangePass{
+    background-color: #1FBF92;
+    color: white;
+    padding: .6rem 1rem;
+    border: 1px solid #1FBF92;
+    border-radius: 2rem;
+    font-weight: bold;
+}
+
+.btnChangePass:hover{
+    background-color: #1fbf92a6;
+}
+
+/* estilos para mostrar la seccion de cambio de Ayuda */
+
+
+.headerServicioEstudiantil h2{
+    color: #123E74;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.servicesBlock{
+    margin-top: 2rem;
+}
+
+.servicesBlock .row{
+    justify-content: center;
+    gap: 1rem;
+}
+
+.servicesBlock .card{
+    border-radius: 2rem;
+    /* width: 14rem; */
+    padding: 0 .5rem;
+    border: 1px solid rgba(0, 0, 0, 0.199);
+}
+
+.servicesBlock figure{
+    background: linear-gradient(90deg, rgba(139,85,254,1) 0%, rgba(116,155,243,1) 50%, rgba(93,220,230,1) 100%);
+    margin: 1rem 1rem 0 1rem;
+    /* border: 1px solid red; */
+    border-radius: 50%;
+    padding: 3rem;
+    width: 18rem;
+    height: 18rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.servicesBlock figure > img{
+    height: 100%;
+}
+
+.servicesBody h3{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.servicesBody p, .servicesBody span{
+    font-size: .9rem;
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+
+
+.servicesColumCards{
+    width: 46%;
+}
+
+/* estilos para mostrar la seccion de cambio Solicitudes Enviadas */
+
+.headerTusSolicitudes h2{
+    color: #123E74;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.statusSolicitud{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: end;
+}
+
+.statusPendiente, .statusRevisado{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.statusPendiente i{
+    color: #FF3131;
+    font-size: 1.5rem;
+}
+
+.statusRevisado i{
+    color: #1FBF92;
+    font-size: 1.5rem;
+}
+
+.statusPendiente span, .statusRevisado span{
+    color: #002f69c5;
+    /* font-weight: bold; */
+    margin: 0;
+}
+
+.reviewSolicitud{
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.checkSolicitud, .waitSolicitud{
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.waitSolicitud:last-child{
+    margin-bottom: 0;
+}
+
+.headerCheckSolicitud, .headerWaitSolicitud{
+    background-color: #0D8BD2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem;
+}
+
+.headerCheckSolicitud h3, .headerWaitSolicitud h3{
+    font-size: 1.3rem;
+    margin: 0;
+    color: white;
+}
+
+.headerCheckSolicitud span, .headerWaitSolicitud span{
+    margin: 0;
+    color: white;
+}
+
+.bodyCheckSolicitud{
+    background-color: #1FBF92;
+    height: 8rem;
+    padding: .5rem;
+    overflow: auto;
+}
+
+.bodyCheckSolicitud p{
+    text-wrap: pretty;
+
+}
+
+.bodyWaitSolicitud{
+    background-color: #DBA6AA;
+    height: 8rem;
+    padding: .5rem;
+    overflow: auto;
+}
+
+.bodyCheckSolicitud p{
+    text-wrap: pretty;
+
+}
+
+
+/* estilos para mostrar la seccion de cambio Envia tus solicitudes */
+
+
+.headerSendSolicitud h2{
+    color: #123E74;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.blockTypeSolicitud{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding: 1rem 0;
+}
+
+.typeSolicitud{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+}
+
+.typeSolicitud label{
+    color: #002f69;
+    font-weight: 400;
+}
+
+.solicitudFigure{
+    height: 100%;
+    
+}
+
+.solicitudFigure figure{
+    padding: .5rem;
+    height: 100%;
+}
+
+.solicitudFigure figure > img{
+    height: 100%;
+    width: 100%;
+    opacity: .6;
+}
+
+.blockWriteSolicitud{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 1.2rem;
+}
+
+.blockWriteSolicitud label{
+    font-size: 1.2rem;
+    color: #38b6ff;
+    font-weight: bold;
+}
+
+.blockWriteSolicitud textarea{
+    resize: none;
+    height: 12rem;
+    text-wrap: pretty;
+}
+.btnBlockSolicitud{
+    width: 60%;
+    margin-top: 2rem;
+}
+
+.btnSendSolicitud{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1FBF92;
+    border: 1px solid #1FBF92;
+    width: 100%;
+    height: 3rem;
+    gap: 1rem;
+    border-radius: 3rem;
+    transition: 300ms ease-in-out;
+}
+
+.btnSendSolicitud:hover{
+    background-color: #1fbf92c0;
+}
+
+.btnSendSolicitud span{
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.btnSendSolicitud figure{
+    height: 100%;
+    margin: 0;
+}
+
+.btnSendSolicitud figure > img{
+    height: 100%;
+}
+
+/* estilos para mostrar la seccion de cambio Envia tus Sugerencias */
+
+.headerSendSugerencias h2{
+    color: #123E74;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.formSugerencias{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 4rem;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.nameInput, .correoInput{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.nameInput input, .correoInput input{
+    border-radius: 2rem;
+    border: 1px solid rgba(0, 0, 0, 0.377);
+}
+
+.boxNameInput, .boxCorreoInput{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 8rem;
+}
+
+.boxNameInput i, .boxCorreoInput i{
+    font-size: 2rem;
+}
+
+.boxNameInput span, .boxCorreoInput span{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+.moreDetailsBlock{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 0 1.2rem;
+}
+
+.moreDetailsBlock label{
+    font-size: 1.2rem;
+    color: #38b6ff;
+    font-weight: bold;
+}
+
+.moreDetailsBlock textarea{
+    resize: none;
+    height: 16rem;
+    text-wrap: pretty;
+}
+
+.btnSendSugerencias{
+    width: 60%;
+    margin-top: 2rem;
+}
+
+.sendBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1FBF92;
+    border: 1px solid #1FBF92;
+    width: 100%;
+    height: 3rem;
+    gap: 1rem;
+    border-radius: 3rem;
+    transition: 300ms ease-in-out;
+}
+
+.sendBtn:hover{
+    background-color: #1fbf92c0;
+}
+
+.sendBtn span{
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.sendBtn figure{
+    height: 100%;
+    margin: 0;
+}
+
+.sendBtn figure > img{
+    height: 100%;
+}
+
+
+/* estilos para la vista administrador seccion registro de estudiantes */
+
+.headerRegistroEstudiantes h2{
+    color: #123E74;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+
+.blockRegistroEstudiantes{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.headerFormAcademico, .headerDatosPersonales, .headerDatosResidenciales{
+    width: 100%;
+    background-color: #002F69;
+}
+
+.headerFormAcademico h3, .headerDatosPersonales h3, .headerDatosResidenciales h3{
+    color: white;
+    margin: 0;
+    padding: .5rem 0;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.bodyFormAcademico, .bodyFormDatosPersonales, .bodyFormDatosResidenciales{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 12rem;
+    background: linear-gradient(90deg, rgba(190,190,190,1) 0%, rgba(222,222,222,1) 50%, rgba(255,255,255,1) 100%);
+}
+
+.checkEstudianteForm, .seachForm, .firstBlockDatos, .secondBlockDatos{
+    height: 100%;
+    width: 100%;
+    
+}
+
+.checkEstudianteForm{
+    display: grid;
+    place-content: center;
+    gap: 1rem;
+    margin: 0;
+    font-size: 1.1rem;
+    color: #002F69;
+    font-weight: bold;
+}
+
+.seachForm{
+    display: grid;
+    place-content: center;
+    border-left: 1px dashed #002F69;
+}
+    
+.inputEstudianteForm{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 0 3rem;
+}
+
+.inputEstudianteForm label{
+    margin: 0;
+    font-size: 1.1rem;
+    color: #002F69;
+    font-weight: bold;
+    width: 20%;
+}
+
+.inputEstudianteForm input{
+    border-radius: 2rem;
+    border: 1px solid rgba(0, 0, 0, 0.322);
+    width: 80%;
+}
+
+.searchBtnCedula{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+.btnCedula{
+    border-radius: 2rem;
+    background: linear-gradient(90deg, rgba(140,82,255,1) 0%, rgba(27,218,255,1) 100%);
+    color: white;
+}
+
+.bodyFormDatosPersonales{
+    height: 18rem;
+}
+
+.firstBlockDatos, .secondBlockDatos, .boxOneDatosResidenciales, .boxTwoDatosResidenciales{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    font-size: 1.2rem;
+    color: #002F69;
+    font-weight: bold;
+}
+
+.firstBlockDatos input, .secondBlockDatos input, .boxOneDatosResidenciales input{
+    border-radius: 2rem;
+    border: 1px solid rgba(0, 0, 0, 0.322);
+}
+
+.radioDatosForm{
+    color: #002F69;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    /* gap: .7rem; */
+}
+
+.radioDatosForm span{
+    font-size: 1.2rem;
+}
+
+.checkTypeSexo{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+}
+
+.bodyFormDatosResidenciales{
+    height: 16rem;
+}
+
+.boxOneDatosResidenciales, .boxTwoDatosResidenciales{
+    padding: 1rem 2rem;
+    height: 100%;
+    width: 100%;
+}
+
+.boxTwoDatosResidenciales{
+    border-left: 1px dashed #002F69;
+}
+
+.boxTwoDatosResidenciales textarea{
+    resize: none;
+    height: 8rem;
+    border-radius: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.322);
+    text-wrap: pretty;
+}
+
+.sendRegistroEstudiantes{
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-evenly;
+    padding: 1rem 0;
+}
+
+.btnCancelRegistro, .btnSendRegistro{
+    width: 30%;
+    color: white;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.btnCancelRegistro{
+    background-color: #ff3131;
+}
+
+.btnSendRegistro{
+    background-color: #1fbf92;
+}
+
+.btnSendRegistro:hover{
+    background-color: #1fbf92b9;
+    color: rgba(0, 0, 0, 0.603);
+}
+
+.btnCancelRegistro:hover{
+    background-color: #ff3131b7;
+    color: rgba(0, 0, 0, 0.603);
+}
+
+.btnCancelRegistro span, .btnSendRegistro span{
+    margin: 0;
+}
+
+.btnCancelRegistro i, .btnSendRegistro i{
+    font-size: 2rem;
+}
+
+/* estilos para la vista administrador seccion DATOS DE REPORTES */
+
+.headerDatosReportes h2{
+    color: #123E74;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.boxBodyReportes{
+    margin-top: 2rem;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.headerDatosGenerales{
+    background: linear-gradient(90deg, rgba(0,74,173,1) 0%, rgba(203,108,230,1) 100%);
+    width: 100%;
+}
+
+.headerDatosGenerales h3{
+    color: white;
+    margin: 0;
+    padding: .5rem 0;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.boxDatosText{
+    height: 16rem;
+    background: linear-gradient(90deg, rgba(190,190,190,1) 0%, rgba(222,222,222,1) 50%, rgba(255,255,255,1) 100%);
+    padding: 1rem;
+    text-align: center;
+}
+
+.boxDatosText p{
+    width: 100%;
+    height: 70%;
+    background-color: white;
+    border-radius: 2rem;
+    border: 1px solid rgba(0, 0, 0, 0.425)
+}
+
+.buttonListReport{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.btnListSolicitud, .btnListSugerencias{
+    width: 40%;
+    background-color: #38b6ff;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btnListSolicitud:hover, .btnListSugerencias:hover{
+    background-color: #38b6ffa8;
+    color: white;
+}
+
+.btnListSolicitud figure, .btnListSugerencias figure{
+    margin: 0;
+    height: 2rem;
+}
+
+.btnListSolicitud figure img, .btnListSugerencias figure img{
+    height: 100%;
+    width: 100%;
+}
+
+.headerListaSolicitudes, .headerListaSugerencias{
+    width: 100%;
+    background-color: #002F69;
+}
+
+.headerListaSolicitudes h3, .headerListaSugerencias h3{
+    color: white;
+    margin: 0;
+    padding: .5rem 1.5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.boxListSolicitudes, .boxListSugerencias{
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(90deg, rgba(190,190,190,1) 0%, rgba(222,222,222,1) 50%, rgba(255,255,255,1) 100%);
+    
+}
+
+.headerListBox, .subHeaderListBox{
+    width: 100%;
+    background-color: #1fbf92;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 1.5rem;
+}
+
+.headerListBox{
+    border-top: 1px solid rgba(0, 0, 0, 0.514);
+    border-right: 1px solid rgba(0, 0, 0, 0.514);
+    border-left: 1px solid rgba(0, 0, 0, 0.514);
+}
+
+.subHeaderListBox{
+    background-color: #38b6ff;
+    border-right: 1px solid rgba(0, 0, 0, 0.514);
+    border-left: 1px solid rgba(0, 0, 0, 0.514);
+    
+}
+
+.headerListBox h3, .headerListBox span, .subHeaderListBox p, .subHeaderListBox span {
+    color: #002f69;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.headerListBox h3, .subHeaderListBox h3{
+    font-weight: bold;
+}
+
+.descripcionBoxSolicitud{
+    width: 100%;
+    padding: 1rem;
+    background-color: #f7f7f7;
+    height: 10rem;
+    border-right: 1px solid rgba(0, 0, 0, 0.514);
+    border-left: 1px solid rgba(0, 0, 0, 0.514);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.514);
+    border-radius: 0 0 2rem 2rem;
+}
+
+.descripcionBoxSolicitud p{
+    color: #002F69;
+    text-wrap: pretty;
+}
+
+.selectOptionsSugerencias{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.typeSelect, .estadoSelect, .carreraSelect{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    color: #002F69;
+    font-weight: 400;
+}
+
+.applyParametros{
+    width: 100%;
+    margin: 2rem 0;
+    display: flex;
+    gap: 2.5rem;
+    /* font-size: 1.2rem; */
+    color: #002F69;
+    font-weight: bold;
+}
+
+.tableInfoSugerencias{
+    width: 100%;
+    height: auto;
+    /* border-radius: 2rem;
+    overflow: hidden;
+    height: auto; */
+}
+
+.tableInfoSugerencias .table{
+    margin: 0;
+    border: 3px solid #002F69;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.tableInfoSugerencias .table thead th{
+    color: #002F69;
+}
+
+.tableInfoSugerencias .table th{
+    border-bottom: 3px solid #002F69;
+}
+
+.tableInfoSugerencias .table tbody td {
+    border-left: 3px solid #002F69;
+    border-right: 3px solid #002F69;
+    border-bottom: 3px solid #002F69;
+}
+
+.tableInfoSugerencias .table thead th{
+    color: #123E74;
+    font-weight: bold;
+}
+
+.tableInfoSugerencias .table thead th:nth-child(2), .tableInfoSugerencias .table th:nth-child(3), .tableInfoSugerencias .table th:nth-child(4){
+    border-left: 3px solid #002F69;
+    border-bottom: 3px solid #002F69;
+    border-right: 3px solid #002F69;
+}
+.tableInfoSugerencias .table thead th:nth-child(1), .tableInfoSugerencias .table th:nth-child(4), .tableInfoSugerencias .table th:nth-child(5){
+    /* border-left: 3px solid #002F69; */
+    border-bottom: 3px solid #002F69;
+    /* border-right: 3px solid #002F69; */
+}
+
+.generarSugerencias{
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.btnSugerenciasList{
+    background-color: #1FBF92;
+    color: white;
+    border-radius: 2rem;
+    padding: .5rem 1rem;
+    border: 1px solid #1FBF92;
+}
+
+.btnSugerenciasList:hover{
+    background-color: #1fbf92b7;
+}
+
+
+/* estilos para la seccion actualizar servicios de la vista de administrador */
+
+.headerServicios h2{
+    color: #123E74;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.boxBodyServicios{
+    margin-top: 3rem;
+    width: 85%;
+    padding: 1rem 2rem;
+    background: linear-gradient(90deg, rgba(190,190,190,1) 0%, rgba(222,222,222,1) 50%, rgba(255,255,255,1) 100%);
+    /* height: 20rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 1rem;
+
+}
+
+.selectServicio{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    gap: .5rem;
+}
+
+.selectServicio label, .selectHorario label, .selectUbicacion label{
+    color: #002F69;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.selectServicio select, .selectHorario input, .selectUbicacion input{
+    border-radius: 1rem;
+}
+
+.selectCheckEstado > label{
+    color: #002F69;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.selectCheckEstado{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding: 0;
+}
+
+/* .checkService{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+}
+*/
+.checkService label{
+    color: #002F69;
+} 
+
+.sendSelectBox{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.btnSendSelect{
+    background-color: #1FBF92;
+    color: white;
+    border-radius: 1rem;
+    padding: .5rem 1rem;
+    display: flex ;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btnSendSelect:hover{
+    background-color: #1fbf92b2;
+}
+
+.btnSendSelect span{
+    font-size: 1.3rem;
+
+}
+
+.btnSendSelect i{
+    font-size: 2rem;
+}
+
+
+/* estilos para la seccion publicaciones pendientes de la vista de administrador */
+
+.headerPostPendientes h2{
+    color: #123E74;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+
+.boxBodyPostsPendientes{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    
+    background: linear-gradient(90deg, rgba(190,190,190,1) 0%, rgba(222,222,222,1) 50%, rgba(255,255,255,1) 100%);
+    border: 1px solid rgba(0, 0, 0, 0.363);
+    border-radius: 1.5rem
+}
+
+.boxPostPendiente{
+    background-color: white;
+    width: 100%;
+    height: 12rem;
+    padding: 1rem;
+    text-wrap: pretty;
+    overflow: auto;
+    /* position: relative; */
+    border: 1px solid rgba(0, 0, 0, 0.363);
+    border-radius: 1.5rem;
+}
+
+.boxPostPendiente > p{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.optionsPostsPendientes{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: .5rem 0;
+}
+
+.btnPostsCancel{
+    background-color: #FF3131;
+    color: white;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.btnPostsCancel span{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.btnPostsCancel i{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.btnPostsCancel:hover{
+    background-color: #ff31319f;
+}
+
+.btnPostsAccept{
+    background-color: #1FBF92;
+    color:white;
+    padding: .5rem 1rem;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.btnPostsAccept span{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.btnPostsAccept i{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.btnPostsAccept:hover{
+    background-color: #1fbf92c2;
+}
+
+
+
+/* estilos para la seccion agregar eventos de la vista de administrador */
+
+.headerEventos h2{
+    color: #123E74;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.bodyFormEventos{
+    margin-top: 2rem;
+    width: 80%;
+    padding: 1rem;
+    background: linear-gradient(90deg, rgba(190,190,190,1) 0%, rgba(222,222,222,1) 50%, rgba(255,255,255,1) 100%);
+    /* border: 1px solid rgba(0, 0, 0, 0.363); */
+    border-radius: 1.5rem
+}
+
+.bodyFormEventos label{
+    color: #002F69;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding-left: .5rem;
+}
+
+.bodyFormEventos input{
+    border-radius: 2rem;
+    border: 1px solid rgba(0, 0, 0, 0.322);
+}
+
+.bodyFormEventos textarea{
+    resize: none;
+    height: 10rem;
+}
+
+.dateInputs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inputFechaForm, .inputHoraForm{
+    width: 45%;
+}
+
+.radioBoxEvent{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sendFormEventos{
+    margin-top: 2rem;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.btnSendEventos{
+    width: 40%;
+    /* height: 4rem; */
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+    background-color: #1FBF92;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+    
+}
+
+.btnSendEventos:hover{
+    background-color: #1fbf92c5;
+}
+
+.btnSendEventos span{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.btnSendEventos figure{
+    height: 2rem;
+    margin: 0;
+}    
+
+.btnSendEventos figure img{
+    /* width: 100%; */
+    height: 100%;
+    object-fit: cover;
+}
+
+/* estilo de lista de estudiantes*/
+
+.headerMateria h2 {
+    text-align: center; /* Centra el texto horizontalmente */
+    margin-bottom: 1rem; /* Espacio debajo del título */
+    color: #123E74;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.generarLista{
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.btnList{
+    background-color: #1FBF92;
+    color: white;
+    border-radius: 2rem;
+    padding: .5rem 1rem;
+    border: 1px solid #1FBF92;
+}
+
+.btnList:hover{
+    background-color: #1fbf92b7;
+}
+
+
+.boxListMateria {
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(90deg, rgba(190,190,190,1) 0%, rgba(222,222,222,1) 50%, rgba(255,255,255,1) 100%);
+    margin-top: 1rem; /* Ajusta este valor según lo necesites */
+
+}
+
+
+
+.selectOptionsMateria{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+ .materiaSelect{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    color: #002F69;
+    font-weight: 400;
+}
+
+
+
+.tableMateria{
+    width: 100%;
+    height: auto;
+    /* border-radius: 2rem;
+    overflow: hidden;
+    height: auto; */
+}
+
+.tableMateria .table{
+    margin: 0;
+    border: 3px solid #002F69;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.tableMateria .table thead th{
+    color: #002F69;
+}
+
+.tableMateria .table th{
+    border-bottom: 3px solid #002F69;
+}
+
+.tableMateria .table tbody td {
+    border-left: 3px solid #002F69;
+    border-right: 3px solid #002F69;
+    border-bottom: 3px solid #002F69;
+}
+
+.tableMateria .table thead th{
+    color: #123E74;
+    font-weight: bold;
+}
+
+.tableMateria .table thead th:nth-child(2), .tableMateria .table th:nth-child(3), .tableMateria .table th:nth-child(4){
+    border-left: 3px solid #002F69;
+    border-bottom: 3px solid #002F69;
+    border-right: 3px solid #002F69;
+}
+.tableMateria .table thead th:nth-child(1), .tableMateria .table th:nth-child(4), .tableMateria .table th:nth-child(5){
+    /* border-left: 3px solid #002F69; */
+    border-bottom: 3px solid #002F69;
+    /* border-right: 3px solid #002F69; */
+}

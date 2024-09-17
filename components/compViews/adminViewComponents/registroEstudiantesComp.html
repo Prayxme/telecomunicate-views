@@ -1,0 +1,139 @@
+<!-- COMPONENTE PARA MOSTRAR LA SECCION DE REGISTRO DE ESTUDIANTES-->
+<div class="blockShowInfo">
+
+    <div class="headerRegistroEstudiantes">
+        <h2>Registro de Estudiantes</h2>
+    </div>
+
+    <div class="blockRegistroEstudiantes">
+        <div class="headerFormAcademico">
+            <h3>Datos Académicos</h3>
+        </div>
+
+        <div class="bodyFormAcademico">
+            <div class="checkEstudianteForm">
+                <div class="form-check ">
+                    <input class="form-check-input" type="checkbox" name="Estudiante" id="checkEstudiante">
+                    <label class="form-check-label" for="checkEstudiante">
+                        Estudiante Trabaja
+                    </label>
+                </div>
+                <div class="form-check ">
+                    <input class="form-check-input" type="checkbox" name="Estudiante" id="checkEstudiante">
+                    <label class="form-check-label" for="checkEstudiante">
+                        Estudiante Foráneo
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="Estudiante" id="checkEstudiante">
+                    <label class="form-check-label" for="checkEstudiante">
+                        Fuera del País
+                    </label>
+                </div>
+            </div>
+            <div class="seachForm">
+                <div class="mb-3 inputEstudianteForm">
+                    <label for="cedulaSearch" class="form-label">Cedula</label>
+                    <div class="searchBtnCedula">
+                        <input type="text" class="form-control" id="cedulaSearch">
+                        <button class="btn btnCedula">Buscar</button>
+                    </div>
+                </div>
+                <div class="mb-3 inputEstudianteForm">
+                    <label for="carreraSearch" class="form-label">Carrera</label>
+                    <input type="text" class="form-control" id="carreraSearch">
+                </div>
+            </div>
+        </div>
+
+        <div class="headerDatosPersonales">
+            <h3>Datos Personales</h3>
+        </div>
+
+        <div class="bodyFormDatosPersonales">
+
+            <div class="firstBlockDatos">
+                <div class="mb-3">
+                    <label for="nombrePersonalControl" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombrePersonalControl">
+                </div>
+
+                <div class="radioDatosForm mb-3">
+                    <span>Sexo</span>
+                    <div class="checkTypeSexo">
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="checkDatosSexo" name="tipoSexo">
+                            <label class="form-check-label" for="checkDatosSexo">
+                                M
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="checkDatosSexo" name="tipoSexo">
+                            <label class="form-check-label" for="checkDatosSexo">
+                                F
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="fechaNacimientoControl" class="form-label">Fecha de Nacimiento</label>
+                    <input type="text" class="form-control" id="fechaNacimientoControl">
+                </div>
+
+            </div>
+            <div class="secondBlockDatos">
+                <div class="mb-3">
+                    <label for="apellidoPersonalControl" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="apellidoPersonalControl">
+                </div>
+                <div class="mb-3">
+                    <label for="condicionesPersonalControl" class="form-label">Condiciones Medicas</label>
+                    <input type="text" class="form-control" id="condicionesPersonalControl">
+                </div>
+                <div class="mb-3">
+                    <label for="capacidadPersonalControl" class="form-label">Capacidad Especial</label>
+                    <input type="text" class="form-control" id="capacidadPersonalControl">
+                </div>
+            </div>
+        </div>
+
+        <div class="headerDatosResidenciales">
+            <h3>Datos Residenciales</h3>
+        </div>
+
+        <div class="bodyFormDatosResidenciales">
+            <div class="boxOneDatosResidenciales">
+                <div class="mb-3">
+                    <label for="correoPersonalControl" class="form-label">Correo</label>
+                    <input type="email" class="form-control" id="correoPersonalControl">
+                </div>
+                <div class="mb-3">
+                    <label for="telefonoPersonalControl" class="form-label">Teléfono</label>
+                    <input type="email" class="form-control" id="telefonoPersonalControl">
+                </div>
+            </div>
+            <div class="boxTwoDatosResidenciales">
+                <div class="mb-3">
+                    <label for="direccionFormControl" class="form-label">Dirección</label>
+                    <textarea class="form-control" id="direccionFormControl" rows="3"></textarea>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="sendRegistroEstudiantes">
+        <button class="btn btnCancelRegistro">
+            <span>Cancelar</span>
+            <i class='bx bx-check'></i>
+        </button>
+
+        <button class="btn btnSendRegistro">
+            <span>Registrar</span>
+            <i class='bx bx-trash'></i>
+        </button>
+    </div>
+</div>
